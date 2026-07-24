@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+/* Dark mode via class strategy: <html class="dark"> */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+
+  /* Ignite palette — a confident startup orange over near-black. */
+  --color-flame-50: #fff4ed;
+  --color-flame-100: #ffe6d5;
+  --color-flame-300: #ffab7a;
+  --color-flame-500: #f4602a;
+  --color-flame-600: #e04517;
+  --color-slate-975: #0a0a0c;
+}
+
+/* Hero aurora. Drawn, not loaded. */
+.aurora {
+  background-color: #0a0a0c;
+  background-image:
+    radial-gradient(at 20% 15%, rgba(244, 96, 42, 0.38) 0px, transparent 50%),
+    radial-gradient(at 78% 8%, rgba(255, 171, 122, 0.22) 0px, transparent 48%),
+    radial-gradient(at 60% 80%, rgba(224, 69, 23, 0.28) 0px, transparent 55%),
+    radial-gradient(at 12% 88%, rgba(120, 40, 10, 0.35) 0px, transparent 58%);
+}
+
+/* Subtle grid, the startup-landing-page house style. */
+.grid-lines {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+/* Scroll-reveal (components/Reveal.tsx) */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 0.7s cubic-bezier(0.21, 0.47, 0.32, 0.98),
+    transform 0.7s cubic-bezier(0.21, 0.47, 0.32, 0.98);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Form inputs */
+.input {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 0.8rem 1rem;
+  font-size: 0.95rem;
+  color: inherit;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.input::placeholder {
+  color: currentColor;
+  opacity: 0.42;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-flame-500);
+  box-shadow: 0 0 0 3px rgba(244, 96, 42, 0.2);
+}
+
+.dark .input {
+  border-color: rgba(255, 255, 255, 0.16);
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+/* Input on a dark hero */
+.input-on-dark {
+  border-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.input-on-dark::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
