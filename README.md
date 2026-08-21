@@ -3,6 +3,7 @@
 **A production-ready startup landing page built with Next.js 15, TypeScript, and Tailwind CSS v4.** Waitlist mode, an investor section, and analytics already wired to every button. Clone it, edit one config file, deploy for free.
 
 **[Live demo →](https://pixelandoak-ignite.pages.dev)**
+**[Template page →](https://pixelandoak.com/templates/startup-landing-page-template/)**
 
 ![Ignite screenshot](./screenshot.png)
 
@@ -116,5 +117,5 @@ MIT — free for personal and commercial use. Attribution appreciated but not re
 
 ---
 
-Built by [Pixel & Oak](https://pixelandoak.com) — web design and AI development studio.
+Built by [Pixel & Oak](https://pixelandoak.com/templates/startup-landing-page-template/) — web design and AI development studio.
 More free templates: [Nova (blog)](https://github.com/haider484991/nova-nextjs-blog-template) · [LaunchPad (SaaS)](https://github.com/haider484991/launchpad-nextjs-saas-template) · [Table & Fork (restaurant)](https://github.com/haider484991/tablefork-nextjs-restaurant-template) · [Lumen (photography)](https://github.com/haider484991/lumen-nextjs-photography-template)

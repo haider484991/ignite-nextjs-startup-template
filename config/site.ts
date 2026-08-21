@@ -159,7 +159,11 @@ export const siteConfig = {
    */
   waitlistAction: "",
 
-  footerNote: "Built with the free Ignite template by Pixel & Oak.",
+  footerNote: "Built with the free Ignite template by",
+  footerCredit: {
+    label: "Pixel & Oak",
+    href: "https://pixelandoak.com/templates/startup-landing-page-template/?utm_source=ignite-template",
+  },
 } as const;
 
 export type SiteConfig = typeof siteConfig;
