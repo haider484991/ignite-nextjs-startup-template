@@ -5,6 +5,8 @@
 **[Live demo →](https://pixelandoak-ignite.pages.dev)**
 **[Template page →](https://pixelandoak.com/templates/startup-landing-page-template/)**
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fhaider484991%2Fignite-nextjs-startup-template&project-name=ignite-startup&repository-name=ignite-startup)
+
 ![Ignite screenshot](./screenshot.png)
 
 ## The one feature other templates don't have
